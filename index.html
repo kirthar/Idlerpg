@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+  <meta name="theme-color" content="#ffd6e8" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <title>Prisma Girls ✨</title>
+  <link rel="manifest" href="./manifest.webmanifest" />
+  <link rel="icon" href="./icon.svg" type="image/svg+xml" />
+</head>
+<body>
+  <div id="app">
+    <header id="hud">
+      <div id="currencies">
+        <span id="luz-counter" class="currency">⭐ 0</span>
+        <span id="polvo-counter" class="currency">✨ 0</span>
+        <span id="frag-counter" class="currency">🔮 0</span>
+        <button id="sound-toggle" title="Sonido">🔊</button>
+      </div>
+      <div id="objective"></div>
+    </header>
+
+    <main id="stage">
+      <div id="zone-row">
+        <span id="zone-label"></span>
+        <div id="wave-dots"></div>
+      </div>
+      <div id="boss-bar" style="display:none">
+        <div id="boss-time"></div>
+        <div class="boss-track"><div id="boss-time-fill"></div></div>
+      </div>
+
+      <div id="enemy-area">
+        <div id="enemy-sprite"></div>
+        <div id="float-layer"></div>
+        <div id="combo-badge" style="display:none"></div>
+      </div>
+
+      <button id="retry-boss" style="display:none">👑 ¡Desafiar al jefe otra vez!</button>
+
+      <div id="enemy-hp">
+        <div class="hp-track"><div id="hp-fill"></div></div>
+        <span id="hp-text"></span>
+      </div>
+
+      <div id="quick-stats">
+        <span id="stat-tap"></span>
+        <span id="stat-dps"></span>
+        <span id="stat-crit"></span>
+      </div>
+
+      <div id="skill-bar" style="display:none"></div>
+      <div id="team-row"></div>
+    </main>
+
+    <section id="panel"></section>
+
+    <nav id="tabs">
+      <button class="tab sel" data-tab="combate"><span>⚔️</span>Combate</button>
+      <button class="tab" data-tab="chicas"><span>🎀</span>Chicas</button>
+      <button class="tab" data-tab="taller"><span>🔮</span>Taller</button>
+      <button class="tab" data-tab="familiar"><span>🐰</span>Mochi</button>
+      <button class="tab" data-tab="estrellas"><span>✨</span>Estrellas</button>
+    </nav>
+
+    <div id="toasts"></div>
+    <div id="modals"></div>
+  </div>
+  <script type="module" src="./src/main.ts"></script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Prisma Girls</string>
+    <string name="title_activity_main">Prisma Girls</string>
+    <string name="package_name">com.kirthar.prismagirls</string>
+    <string name="custom_url_scheme">com.kirthar.prismagirls</string>
+</resources>

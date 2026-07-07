@@ -1,0 +1,12 @@
+node_modules/
+dist/
+shots/
+*.log
+
+# Android (generado por Capacitor y Gradle)
+android/.gradle/
+android/app/build/
+android/build/
+android/local.properties
+android/.idea/
+android/app/release/
